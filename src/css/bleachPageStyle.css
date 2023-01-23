@@ -1,0 +1,165 @@
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1.5rem;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.nav__menu {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.nav__menu li {
+  margin: 0.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.nav__menu li a {
+  font-weight: 400;
+  font-size: 1.2rem;
+  border-radius: 0.5rem;
+  padding: 0.6rem;
+  transition: 0.4s ease;
+}
+
+.nav__menu li a:hover {
+  background-color: #c5201e;
+}
+
+.head__logo {
+  width: 65px;
+}
+
+.main__container {
+  max-width: 1440px;
+  height: calc(100vh - 132px);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 30px 30px;
+}
+
+.content__tittle {
+  max-width: 600px;
+}
+
+.container__ichigo {
+  width: 600px;
+}
+
+.content__desc p {
+  text-align: justify;
+  color: #a8adb7;
+  font-size: 1.1rem;
+  filter: drop-shadow(0 0 12px #0c0304);
+  margin: 30px 0;
+}
+
+.desc__strong{
+  font-weight: 900;
+}
+
+button.content__buttonTrailer {
+  padding: 0.6rem;
+  margin-top: 0.8rem;
+  background-color: #c5201e;
+  font-weight: 500;
+  border: none;
+  border-radius: 0.6rem;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: 0.5s all ease-in-out;
+}
+
+button.content__buttonTrailer:hover {
+  transform: scale(1.1);
+  color: #0c0304;
+}
+
+.bg-video {
+  background-color: #c5201e;  
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  z-index: -1;
+}
+.video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.bg-video::after {
+  content: "";
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgb(12, 3, 4);
+  background: linear-gradient(
+    90deg,
+    rgba(12, 3, 4, 1) 0%,
+    rgba(12, 3, 4, 0.803076923076923) 50%,
+    rgba(12, 3, 4, 1) 100%
+  );
+}
+
+.main__modal {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(52, 52, 52, 0.7);
+  visibility: hidden;
+}
+
+.modal__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  border-radius: 0.5rem;
+  gap: 0.9rem;
+}
+
+.modal__close {
+  background-color: #f2f2f2;
+  color: #0c0304;
+  font-size: 20px;
+  font-weight: 900;
+  width: 40px;
+  cursor: pointer;
+  
+  text-align: center;
+  border-radius: 10px;
+  transition: 0.3s all ease-in-out;
+}
+
+.modal__close:hover{
+  transform: scale(1.1);
+  color: #c5201e;
+}
+
+.main__modal iframe {
+  border-width: 0;
+  width: 640px;
+  height: 360px;
+}
+
+.main__modal.--open {
+  opacity: 1;
+  visibility: visible;
+}
+
