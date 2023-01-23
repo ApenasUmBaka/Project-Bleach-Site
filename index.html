@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,600&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="src/Img/Icon_Bleach.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="src/css/reset.css" />
+    <link rel="stylesheet" href="src/css/bleachPageStyle.css" />
+    <link rel="stylesheet" href="src/css/responsive.css" />
+    <title>Bleach</title>
+  </head>
+
+  <body>
+    <div class="bg-video">
+      <video class="video" autoplay muted loop id="videoBg">
+        <source
+          src="./src/video/TVアニメ『BLEACH ーPV／２０２２.mp4"
+          type="video/mp4"
+        />
+      </video>
+    </div>
+
+    <header class="head">
+      <a
+        ><img
+          class="head__logo"
+          src="src/Img/Logo_Bleach_Blue.png"
+          alt="Logo Blue Bleach"
+      /></a>
+
+      <nav>
+        <ul class="nav__menu">
+          <li><a class="menu__home" href="#" target="_blank">Home</a></li>
+          <li>
+            <a class="menu__details" href="#" target="_blank">Detalhes</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main__container">
+      <div class="container__content">
+        <!-- Imagem da Logo Titulo -->
+        <img
+          class="content__tittle"
+          src="src/Img/Bleach_logo_TYBW.png"
+          alt="Titulo Bleach TYBW"
+        />
+        <!-- Texto sinopse do Bleach -->
+        <p class="content__desc">
+          <strong class="desc__strong">Bleach: Thousand–Year Blood War</strong> - “A Guerra Sangrenta dos Mil Anos”,
+          Yhwach, o imperador dos Quincy retorna após mais de 900 anos selado e
+          declara guerra contra não só a Soul Society, como todo o universo que
+          conhecemos. Cabe aos 13 Esquadrões, Ichigo e seus amigos deterem
+          Yhwach e seu exército de Quincys de conseguir o poder de manipular até
+          mesmo a própria realidade.
+        </p>
+        <!-- mudar sinopse -->
+        <!-- Botão para o Trailer -->
+        <button class="content__buttonTrailer">Veja ao Trailer</button>
+      </div>
+      <img
+        class="container__ichigo"
+        src="src/Img/ichigo___thousand_year_blood_war_cropped.png"
+        alt="Bleach Thousand Year Blood War"
+      />
+
+      <div class="main__modal">
+        <div class="modal__content">
+          <span class="modal__close">X</span>
+          <iframe
+            width="560"
+            height="315"
+            id="video"
+            src="https://www.youtube.com/embed/3DaFOa8FgOA"
+            title="Trailer Oficial"
+            frameborder="1"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </main>
+
+    <script src="src/js/index.js"></script>
+  </body>
+</html>
