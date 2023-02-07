@@ -28,7 +28,7 @@ header {
 }
 
 .nav__menu li a:hover {
-  background-color: #c5201e;
+  background-color: var(--color-red);
 }
 
 .head__logo {
@@ -68,7 +68,7 @@ header {
 button.content__buttonTrailer {
   padding: 0.6rem;
   margin-top: 0.8rem;
-  background-color: #c5201e;
+  background-color: var(--color-red);
   font-weight: 500;
   border: none;
   border-radius: 0.6rem;
@@ -83,7 +83,7 @@ button.content__buttonTrailer:hover {
 }
 
 .bg-video {
-  background-color: #c5201e;  
+  background-color: var(--color-red);  
   display: flex;
   justify-content: center;
   position: absolute;
@@ -135,8 +135,8 @@ button.content__buttonTrailer:hover {
 }
 
 .modal__close {
-  background-color: #f2f2f2;
-  color: #0c0304;
+  background-color: var(--color-white);
+  color: var(--color-black);
   font-size: 20px;
   font-weight: 900;
   width: 40px;
@@ -149,7 +149,7 @@ button.content__buttonTrailer:hover {
 
 .modal__close:hover{
   transform: scale(1.1);
-  color: #c5201e;
+  color: var(--color-red);
 }
 
 .main__modal iframe {

@@ -1,0 +1,15 @@
+:root{
+    --color-white: #f2f2f2;
+    --color-black: #0c0304;
+    --color-red: #c5201e;
+}
+
+
+::selection{
+    color: var(--color-black);
+    background-color: var(--color-white);
+}
+
+body{
+    scroll-behavior: smooth;
+}
