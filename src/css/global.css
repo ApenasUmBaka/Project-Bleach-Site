@@ -1,15 +1,58 @@
-:root{
-    --color-white: #f2f2f2;
-    --color-black: #0c0304;
-    --color-red: #c5201e;
+:root {
+  --color-white: #f2f2f2;
+  --color-black: #0c0304;
+  --color-red: #c5201e;
+  --color-orange: #f27620;
 }
 
-
-::selection{
-    color: var(--color-black);
-    background-color: var(--color-white);
+::selection {
+  color: var(--color-black);
+  background-color: var(--color-white);
 }
 
-body{
-    scroll-behavior: smooth;
+body {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow: hidden;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: var(--color-black); 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--color-orange); 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #B34D00; 
+  }
+
+
+
+/* ini: Preloader */
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--color-orange); /* cor do background que vai ocupar o body */
+  z-index: 999; /* z-index para jogar para frente e sobrepor tudo */
+}
+#preloader .inner {
+  position: absolute;
+  top: 50%; /* centralizar a parte interna do preload (onde fica a animação)*/
+  left: 50%;
+  transform: translate(-50%, -50%);
 }

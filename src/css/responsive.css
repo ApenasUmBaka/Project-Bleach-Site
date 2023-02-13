@@ -7,7 +7,11 @@
         display: none;
     }
 
-    .main__container{
+    .details__modal{
+        overflow: scroll;
+    }
+
+    .main__container , .details__content{
         flex-wrap: wrap;
         justify-content: center;
         height: auto;
@@ -18,7 +22,7 @@
         max-width: 90%;
     }
 
-    .container__content{
+    .container__content , .details__content{
         display: flex;
         align-items: center;
         flex-direction: column;

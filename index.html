@@ -10,19 +10,29 @@
       href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,600&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200&display=swap"
       rel="stylesheet"
     />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link
       rel="shortcut icon"
       href="src/Img/Icon_Bleach.ico"
       type="image/x-icon"
     />
     <link rel="stylesheet" href="src/css/reset.css" />
-    <link rel="stylesheet" href="./src/css/global.css">
+    <link rel="stylesheet" href="./src/css/global.css" />
     <link rel="stylesheet" href="src/css/bleachPageStyle.css" />
     <link rel="stylesheet" href="src/css/responsive.css" />
     <title>Bleach</title>
   </head>
 
   <body>
+    <div id="preloader">
+      <div class="inner">
+        <img
+          src="./src/Img/vitalik-egorov-heroattack.gif"
+          alt="gif do Ichigo"
+        />
+      </div>
+    </div>
+
     <div class="bg-video">
       <video class="video" autoplay muted loop id="videoBg">
         <source
@@ -42,15 +52,15 @@
 
       <nav>
         <ul class="nav__menu">
-          <li><a class="menu__home" href="#" target="_blank">Home</a></li>
+          <li><a class="menu__home" id="menu" href="#">Home</a></li>
           <li>
-            <a class="menu__details" href="./details.html">Detalhes</a>
+            <a class="menu__details" id="btndetails__modal" href="#">Detalhes</a>
           </li>
         </ul>
       </nav>
     </header>
 
-    <main class="main__container">
+    <main id="main__container" class="main__container">
       <div class="container__content">
         <!-- Imagem da Logo Titulo -->
         <img
@@ -60,12 +70,13 @@
         />
         <!-- Texto sinopse do Bleach -->
         <p class="content__desc">
-          <strong class="desc__strong">Bleach: Thousand–Year Blood War</strong> - “A Guerra Sangrenta dos Mil Anos”,
-          Yhwach, o imperador dos Quincy retorna após mais de 900 anos selado e
-          declara guerra contra não só a Soul Society, como todo o universo que
-          conhecemos. Cabe aos 13 Esquadrões, Ichigo e seus amigos deterem
-          Yhwach e seu exército de Quincys de conseguir o poder de manipular até
-          mesmo a própria realidade.
+          <strong class="desc__strong">Bleach: Thousand–Year Blood War</strong>
+          - “A Guerra Sangrenta dos Mil Anos”, Yhwach, o imperador dos Quincy
+          retorna após mais de 900 anos selado e declara guerra contra não só a
+          Soul Society, como todo o universo que conhecemos. Cabe aos 13
+          Esquadrões, Ichigo e seus amigos deterem Yhwach e seu exército de
+          Quincys de conseguir o poder de manipular até mesmo a própria
+          realidade.
         </p>
         <!-- mudar sinopse -->
         <!-- Botão para o Trailer -->
@@ -92,9 +103,34 @@
           ></iframe>
         </div>
       </div>
-    </main>
+      <!-- Modal dos Detalhes  -->
+      <div id="details__modal" class="details__modal">
+        <div class="details__content">
 
+          <img class="container__ichigo" src="./src/Img/Bleach-Ichigo-capa.png" alt="Ichigo Imagem">
+          <p class="details__desc">
+            O ano começou com uma excelente notícia para os fãs de anime,
+            especialmente os do personagem Ichigo Kurosaki. Grande sucesso dos
+            anos 2000, Bleach já está com suas 16 temporadas disponíveis na
+            íntegra no Star+. E, a partir do dia 22 de fevereiro, Bleach:
+            Thousand-Year Blood War, lançado em 2022, também chega com
+            exclusividade ao serviço de streaming! A aguardada adaptação do arco
+            final dos mangás criados pelo artista Tite Kubo traz o jovem
+            Kurosaki em Karakura. Enquanto uma misteriosa escuridão se aproxima
+            dele e de seus amigos, na Soul Society um sinal de alerta toca:
+            moradores estão sumindo sem deixar rastros.
+          </p>
+           <a class="content__buttonTrailer" href="https://www.starplus.com/pt-br/series/bleach/6g48QKlgQdWK" target="_blank">Assista no Star+</a> 
+            <span>Make By André Santiago</span>
+          <div class="content__icons">  
+            <a href="https://www.instagram.com/andresantiago.dd" target="_blank"><i class='bx bxl-instagram bx-lg'></i></a>
+            <a href="https://github.com/ApenasUmBaka" target="_blank"><i class='bx bxl-github bx-lg'></i></a>
+          </div>
+
+        </div>
+      </div>
+    </main>
+    <script src="./src/js/preLoader.js"></script>
     <script src="src/js/index.js"></script>
   </body>
 </html>
-
