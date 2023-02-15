@@ -1,6 +1,7 @@
 @media (max-width: 1200px){
     body {
         background-color: #640205;
+        overflow: scroll;
     }
 
     .bg-video{
