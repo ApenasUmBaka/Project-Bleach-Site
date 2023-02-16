@@ -12,6 +12,10 @@
         overflow: scroll;
     }
 
+    .details__content{
+        margin-top: calc(100% - 60px);
+    }
+
     .main__container , .details__content{
         flex-wrap: wrap;
         justify-content: center;
